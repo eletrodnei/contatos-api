@@ -10,11 +10,17 @@ import javax.persistence.Id;
 public class ContatoEntity {
 	@Id
 	@GeneratedValue
-	private Long ID;
+	private long ID;
 	@Column(length = 50,nullable = false)
 	private String Nome;
 	@Column(length = 15)
 	private String telefone;
+
+	
+	
+	public long getID() {
+		return ID;
+	}
 
 	public String getNome() {
 		return Nome;
